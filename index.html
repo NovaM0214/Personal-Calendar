@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>在线日历</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calendar">
+            <!-- 日历头部 -->
+            <div class="calendar-header">
+                <button id="prev-month" class="btn">◀</button>
+                <h2 id="current-date"></h2>
+                <button id="next-month" class="btn">▶</button>
+                <button id="today-btn" class="btn btn-primary">今天</button>
+            </div>
+            
+            <!-- 星期标题 -->
+            <div class="weekdays">
+                <div class="weekday">周一</div>
+                <div class="weekday">周二</div>
+                <div class="weekday">周三</div>
+                <div class="weekday">周四</div>
+                <div class="weekday">周五</div>
+                <div class="weekday weekend">周六</div>
+                <div class="weekday weekend">周日</div>
+            </div>
+            
+            <!-- 日期网格 -->
+            <div class="days-grid" id="days-grid"></div>
+        </div>
+    </div>
+    
+    <script src="lunar.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
